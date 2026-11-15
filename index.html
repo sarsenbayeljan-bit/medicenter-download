@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png"><title>MediCenter Desktop — жүктеу</title>
+<meta name="description" content="MediCenter Desktop — Астанадағы клиникалар, дәрігерлер мен қабылдауларға арналған Windows қосымшасы. ЖИ мен TOPSIS ең қолайлы дәрігер мен клиниканы ұсынады.">
+<style>
+  :root { --bg:#0B1220; --surface:#111A2E; --subtle:#18233A; --text:#E6EDF7; --muted:#94A3B8; --primary:#22D3EE;
+          --primary-2:#06B6D4; --mint:#5EEAD4; --border:#22304A; --navy:#0E3A6B; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Segoe UI", Inter, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .hero { background:linear-gradient(135deg, #0E3A6B 0%, #0B5E8C 60%, #06B6D4 100%); padding:56px 16px 64px; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  .brand { display:flex; align-items:center; gap:12px; font-weight:800; font-size:22px; }
+  .logo { width:44px; height:44px; border-radius:13px; background:#06B6D4; display:grid; place-items:center; }
+  h1 { font-size:clamp(30px, 6vw, 46px); line-height:1.1; margin:28px 0 12px; }
+  .lead { color:#D5E6F7; font-size:18px; max-width:640px; }
+  .ecg { margin:26px 0; max-width:520px; }
+  .ecg path { stroke:var(--mint); stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round;
+              stroke-dasharray:60 540; animation:pulse 2.2s linear infinite; }
+  .ecg .base { stroke-opacity:.3; stroke-dasharray:none; animation:none; }
+  @keyframes pulse { from { stroke-dashoffset:600; } to { stroke-dashoffset:0; } }
+  @media (prefers-reduced-motion: reduce) { .ecg path { animation:none; stroke-dasharray:none; } }
+  .btn { display:inline-flex; align-items:center; gap:10px; background:var(--primary); color:#04202A; font-weight:700;
+         padding:15px 26px; border-radius:12px; text-decoration:none; font-size:17px; box-shadow:0 8px 24px rgba(0,0,0,.25); }
+  .btn:hover { background:#67E8F9; }
+  .meta { color:#CDE3F5; font-size:14px; margin-top:10px; }
+  section { padding:40px 0 8px; }
+  h2 { font-size:22px; margin:0 0 16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:18px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card p { margin:0; color:var(--muted); font-size:14px; }
+  ol { padding-left:22px; margin:0; } ol li { margin:8px 0; }
+  .note { background:#3D2F0A; border-radius:12px; padding:12px 14px; color:#FDE68A; font-size:14px; margin-top:14px; }
+  footer { color:var(--muted); font-size:13px; padding:40px 16px 48px; text-align:center; }
+  code { background:var(--subtle); padding:1px 6px; border-radius:6px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="logo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2.5-6 4 12 3-8 1.5 2H22"/></svg></span> MediCenter <span style="color:#7EE7DB;font-size:12px;letter-spacing:3px;font-weight:700">DESKTOP</span></div>
+    <h1>Клиниканың жүрегі —<br>бір терезеде</h1>
+    <p class="lead">Астанадағы 10 клиника, дәрігерлер кестесі және қабылдауға жазылу. Жасанды интеллект пен TOPSIS әдісі сізге ең қолайлы дәрігер мен клиниканы есептеп, неге екенін түсіндіреді.</p>
+    <svg class="ecg" viewBox="0 0 400 60" aria-hidden="true">
+      <path class="base" d="M0 30H120l12 0 10-24 14 48 12-38 8 14h74l12 0 10-16 12 32 10-16h106"/>
+      <path d="M0 30H120l12 0 10-24 14 48 12-38 8 14h74l12 0 10-16 12 32 10-16h106"/>
+    </svg>
+    <div><a class="btn" href="https://github.com/sarsenbayeljan-bit/medicenter-download/releases/latest/download/MediCenterDesktop_Setup.exe">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Windows үшін жүктеу</a></div>
+    <div class="meta">Нұсқа 3.0.0 · Windows 10 / 11 (64-bit) · <span id="size">MediCenterDesktop_Setup.exe · 74 МБ</span> · тегін</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Орнату — 4 қадам</h2>
+    <ol>
+      <li><b>Жүктеңіз:</b> жоғарыдағы «Windows үшін жүктеу» батырмасын басыңыз.</li>
+      <li><b>Іске қосыңыз:</b> <code>MediCenterDesktop_Setup.exe</code> файлын ашыңыз. Windows «Компьютеріңіз қорғалған» деп ескертсе — «Толығырақ» → «Бәрібір іске қосу» басыңыз (бағдарлама цифрлық қолтаңбасыз оқу жобасы).</li>
+      <li><b>Орнатыңыз:</b> «Келесі» → «Орнату». Әкімші құқығы қажет емес; жұмыс үстелі мен «Бастау» мәзірінде таңбаша пайда болады.</li>
+      <li><b>Кіріңіз:</b> емделуші «Емделуші ретінде тіркелу» арқылы өзі тіркеледі. Дәрігер мен мейірбике логинін клиника әкімшісі береді.</li>
+    </ol>
+    <div class="note">Интернет пен SQL Server міндетті емес: бағдарлама ішкі жергілікті деректер базасымен бірден жұмыс істейді. Клиникада SQL Server болса, ол автоматты түрде қолданылады.</div>
+  </section>
+  <section>
+    <h2>Мүмкіндіктері</h2>
+    <div class="grid">
+      <div class="card"><b>Клиникаларды салыстыру</b><p>2 немесе одан көп клиниканы рейтинг, күту уақыты, баға, келу көрсеткіші бойынша қатар салыстыру.</p></div>
+      <div class="card"><b>Дәрігерлер рейтингі</b><p>Клиника мен мамандық бойынша сүзу, ең жақын бос уақытқа бір батырмамен жазылу.</p></div>
+      <div class="card"><b>Шағым бойынша ЖИ</b><p>Шағымыңызды жазыңыз — ЖИ қай маман керегін және келмеу қаупін болжайды.</p></div>
+      <div class="card"><b>Қауіпсіз кіру</b><p>Құпиясөздер хэш түрінде сақталады, 5 қате әрекеттен кейін аккаунт уақытша бұғатталады.</p></div>
+    </div>
+  </section>
+  <section>
+    <h2>Жүйелік талаптар</h2>
+    <div class="grid">
+      <div class="card"><b>Жүйе</b><p>Windows 10 немесе 11, 64-bit</p></div>
+      <div class="card"><b>Орын</b><p>~300 МБ бос орын</p></div>
+      <div class="card"><b>Деректер</b><p>Жергілікті база: <code>%LOCALAPPDATA%\MediCenterDesktop</code> — бағдарламаны жойғанда сақталады</p></div>
+    </div>
+  </section>
+</main>
+<footer>MediCenter Desktop — «Жүйелік талдау және шешім қабылдау теориясы» пәні бойынша оқу жобасы. Клиникалар, дәрігерлер және статистика ойдан шығарылған.</footer>
+</body>
+</html>
