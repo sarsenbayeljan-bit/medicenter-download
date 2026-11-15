@@ -3,8 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="favicon.png"><title>MediCenter Desktop — жүктеу</title>
-<meta name="description" content="MediCenter Desktop — Астанадағы клиникалар, дәрігерлер мен қабылдауларға арналған Windows қосымшасы. ЖИ мен TOPSIS ең қолайлы дәрігер мен клиниканы ұсынады.">
+<title>MediCenter Desktop — клиника мен дәрігер таңдау, қабылдауға жазылу (Windows) · Астана</title>
+<meta name="description" content="MediCenter Desktop — Астанадағы клиникалар мен емханаларға арналған тегін Windows қосымшасы: пациентті тіркеу, дәрігерге жазылу, ЖИ (AI) және TOPSIS арқылы ең қолайлы клиника мен дәрігерді таңдау. Приложение для записи к врачу и выбора клиники.">
+<meta name="keywords" content="MediCenter, MediCenter Desktop, клиника, емхана, тіркеу, дәрігерге жазылу, Астана, AI, ЖИ, TOPSIS, запись к врачу, клиника Астана, clinic app, doctor appointment">
+<meta name="robots" content="index, follow">
+<meta name="author" content="MediCenter Desktop">
+<meta name="theme-color" content="#0E3A6B">
+<link rel="canonical" href="https://sarsenbayeljan-bit.github.io/medicenter-download/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MediCenter Desktop">
+<meta property="og:locale" content="kk_KZ">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:title" content="MediCenter Desktop — клиника мен дәрігер таңдау қосымшасы">
+<meta property="og:description" content="Астанадағы 10 клиника, дәрігерлер кестесі, қабылдауға жазылу. ЖИ мен TOPSIS ең қолайлы дәрігер мен клиниканы ұсынады. Windows үшін тегін.">
+<meta property="og:url" content="https://sarsenbayeljan-bit.github.io/medicenter-download/">
+<meta property="og:image" content="https://sarsenbayeljan-bit.github.io/medicenter-download/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MediCenter Desktop қосымшасының кіру терезесі">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MediCenter Desktop — клиника мен дәрігер таңдау қосымшасы">
+<meta name="twitter:description" content="Қабылдауға жазылу, ЖИ және TOPSIS арқылы ең қолайлы клиника мен дәрігер. Windows үшін тегін.">
+<meta name="twitter:image" content="https://sarsenbayeljan-bit.github.io/medicenter-download/img/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "MediCenter Desktop",
+  "alternateName": ["MediCenter", "MediCenter Desktop Astana"],
+  "description": "Астанадағы клиникаларға арналған Windows қосымшасы: пациентті тіркеу, дәрігерге жазылу, ЖИ және TOPSIS арқылы клиника мен дәрігер таңдау.",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "MedicalApplication",
+  "softwareVersion": "3.0.0",
+  "inLanguage": ["kk", "ru"],
+  "url": "https://sarsenbayeljan-bit.github.io/medicenter-download/",
+  "downloadUrl": "https://github.com/sarsenbayeljan-bit/medicenter-download/releases/latest/download/MediCenterDesktop_Setup.exe",
+  "fileSize": "74MB",
+  "image": "https://sarsenbayeljan-bit.github.io/medicenter-download/img/og-image.jpg",
+  "screenshot": ["https://sarsenbayeljan-bit.github.io/medicenter-download/img/clinics.webp",
+                 "https://sarsenbayeljan-bit.github.io/medicenter-download/img/doctors.webp"],
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KZT"}
+}
+</script>
 <style>
   :root { --bg:#0B1220; --surface:#111A2E; --subtle:#18233A; --text:#E6EDF7; --muted:#94A3B8; --primary:#22D3EE;
           --primary-2:#06B6D4; --mint:#5EEAD4; --border:#22304A; --navy:#0E3A6B; }
@@ -32,6 +74,11 @@
   .card { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:18px; }
   .card b { display:block; margin-bottom:4px; }
   .card p { margin:0; color:var(--muted); font-size:14px; }
+  .kicker { display:block; font-size:15px; letter-spacing:2px; text-transform:uppercase; color:#7EE7DB; margin-bottom:10px; }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; }
+  .shots figure { margin:0; background:var(--surface); border:1px solid var(--border); border-radius:16px; overflow:hidden; }
+  .shots img { display:block; width:100%; height:auto; }
+  .shots figcaption { padding:10px 14px; color:var(--muted); font-size:14px; }
   ol { padding-left:22px; margin:0; } ol li { margin:8px 0; }
   .note { background:#3D2F0A; border-radius:12px; padding:12px 14px; color:#FDE68A; font-size:14px; margin-top:14px; }
   footer { color:var(--muted); font-size:13px; padding:40px 16px 48px; text-align:center; }
@@ -42,7 +89,7 @@
 <header class="hero">
   <div class="wrap">
     <div class="brand"><span class="logo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2.5-6 4 12 3-8 1.5 2H22"/></svg></span> MediCenter <span style="color:#7EE7DB;font-size:12px;letter-spacing:3px;font-weight:700">DESKTOP</span></div>
-    <h1>Клиниканың жүрегі —<br>бір терезеде</h1>
+    <h1><span class="kicker">MediCenter Desktop</span>Клиниканың жүрегі —<br>бір терезеде</h1>
     <p class="lead">Астанадағы 10 клиника, дәрігерлер кестесі және қабылдауға жазылу. Жасанды интеллект пен TOPSIS әдісі сізге ең қолайлы дәрігер мен клиниканы есептеп, неге екенін түсіндіреді.</p>
     <svg class="ecg" viewBox="0 0 400 60" aria-hidden="true">
       <path class="base" d="M0 30H120l12 0 10-24 14 48 12-38 8 14h74l12 0 10-16 12 32 10-16h106"/>
@@ -65,6 +112,14 @@
       <li><b>Кіріңіз:</b> емделуші «Емделуші ретінде тіркелу» арқылы өзі тіркеледі. Дәрігер мен мейірбике логинін клиника әкімшісі береді.</li>
     </ol>
     <div class="note">Интернет пен SQL Server міндетті емес: бағдарлама ішкі жергілікті деректер базасымен бірден жұмыс істейді. Клиникада SQL Server болса, ол автоматты түрде қолданылады.</div>
+  </section>
+  <section>
+    <h2>Скриншоттар</h2>
+    <div class="shots">
+      <figure><img src="img/clinics.webp" width="1100" height="645" loading="lazy" alt="MediCenter Desktop: Астана клиникаларын TOPSIS бойынша салыстыру кестесі мен рейтингі"><figcaption>Клиникаларды салыстыру — ең қолайлысы және неге екені</figcaption></figure>
+      <figure><img src="img/doctors.webp" width="1100" height="645" loading="lazy" alt="MediCenter Desktop: дәрігерлер рейтингі және қабылдауға жазылу"><figcaption>Дәрігерлер рейтингі — ең жақын бос уақытқа жазылу</figcaption></figure>
+      <figure><img src="img/dashboard.webp" width="1100" height="645" loading="lazy" alt="MediCenter Desktop: клиниканың басты беті, бүгінгі қабылдаулар мен кезек"><figcaption>Басты бет — бүгінгі қабылдаулар мен «тірі» кезек</figcaption></figure>
+    </div>
   </section>
   <section>
     <h2>Мүмкіндіктері</h2>
